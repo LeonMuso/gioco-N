@@ -36,7 +36,7 @@ int main(void) {
             srand(time(NULL));
             n = rand() % (max - min + 1) + min;
             break;
-        default://4 hardcore
+        default: //4 hardcore
             min = 0;
             max = 150;
             vite = 1;
@@ -65,8 +65,8 @@ int main(void) {
     } while (nInserito != n && vite != 0);
     if (vite == 0) {
         printf("  -- GAME OVER -- \n");
-        printf("hai esaurito le vite \n \n");
-        printf("il numero era %d\n", n);
+        printf("hai esaurito le vite \n");
+        printf("  il numero era %d\n", n);
     } else {
         printf("tentativi: %d\n \n", tent);
         printf("vite rimaste: %d\n", vite);
